@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Staff</h1>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mark-converter.html">Mark To Grade</a>
+        <a href="staff.html">Staff</a>
+        <a href="temp-converter.html">Temperature Converter</a>
+    </nav>
+    </header>
+
+    <!--Table for staff sorting-->
+    <main> 
+        <section class="staff-container">
+        <table id="staffTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Ext</th>
+                    <th>StartDate</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+            <!-- Table body inserted by JS-->
+             <tbody id="tableBody"></tbody>
+        </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Vivek Patel. All rights reserved.</p>
+        <p>Last updated: <span id="currentDate"></span></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

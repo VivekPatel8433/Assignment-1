@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Temperature Converter</h1>
+        <nav class="nav-links">
+              <a href="index.html">Profile Page</a>
+              <a href="mark-converter.html">Mark to Grade</a>
+              <a href="staff.html">Staff</a>
+              <a href="temp-converter.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="temp-container">
+            <label for="tempInput">Enter Temperature: </label>
+            <br>
+            <input type="number" id="tempInput" placeholder="Enter Value">
+            <br>
+
+            <!--Temperature units-->
+           <label for="unitSelect">Select Unit: </label>
+           <br>
+            <select id="unitSelect">
+                 <option value="celsius">Celsius (°C)</option>
+                 <option value="fahrenheit">Fahrenheit (°F)</option>
+                 <option value="kelvin">Kelvin (K)</option>
+            </select>
+              <div class="result" id="resultCelsius"></div>
+              <div class="result" id="resultFahrenheit"></div>
+              <div class="result" id="resultKelvin"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Vivek Patel. All rights reserved.</p>
+        <p>Last updated: <span id="currentDate"></span></p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>

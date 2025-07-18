@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark-converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Grade Converter</h1>
+        <nav class="nav-links">
+              <a href="index.html">Profile Page</a>
+              <a href="mark-converter.html">Mark to Grade</a>
+              <a href="staff.html">Staff</a>
+              <a href="temp-converter.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <!--Input element for the marks-->
+    <div class="mark-container">
+        <input type="text" id="markInput" placeholder="Enter your mark">
+        <button id="convertBtn">Convert</button>
+        <!--To display the grade-->
+        <p id="gradeOutput"></p>
+        <!--To display the validation message-->
+        <p id="validationMessage"></p>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Vivek Patel. All rights reserved.</p>
+        <p>Last updated: <span id="currentDate"></span></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
